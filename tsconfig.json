@@ -13,10 +13,45 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
+    "plugins": [{ "name": "next" }],
     "paths": {
-      "@/*": ["./src/*"]
+      "@assets/*": ["./public/assets/*"],
+      "@__mocks__/*": ["./src/__mocks__/*"],
+      "@constants/*": ["./src/constants/*"],
+      "@constants": ["./src/constants"],
+      "@components/*": ["./src/components/*"],
+      "@components": ["./src/components"],
+      "@domains/*": ["./src/domains/*"],
+      "@domains": ["./src/domains"],
+      "@features/*": ["./src/features/*"],
+      "@features": ["./src/features"],
+      "@helpers/*": ["./src/helpers/*"],
+      "@helpers": ["./src/helpers"],
+      "@hooks/*": ["./src/hooks/*"],
+      "@hooks": ["./src/hooks"],
+      "@locales/*": ["./src/locales/*"],
+      "@locales": ["./src/locales"],
+      "@pages/*": ["./src/pages/*"],
+      "@pages": ["./src/pages"],
+      "@services/*": ["./src/services/*"],
+      "@services": ["./src/services"],
+      "@stores/*": ["./src/stores/*"],
+      "@stores": ["./src/stores"],
+      "@styles/*": ["./src/styles/*"],
+      "@styles": ["./src/styles"],
+      "@useCases/*": ["./src/useCases/*"],
+      "@useCases": ["./src/useCases"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules"]
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "commitlint.config.js",
+    "jest.config.js",
+    "next.config.js",
+    "scripts"
+  ],
+  "exclude": ["node_modules", "coverage", "script", "__snapshots__"]
 }

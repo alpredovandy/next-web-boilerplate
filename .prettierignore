@@ -1,0 +1,8 @@
+node_modules
+__generated__
+.next
+storybook-static
+build
+dist
+next-env.d.ts
+coverage

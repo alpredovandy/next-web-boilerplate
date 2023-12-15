@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test locales: id Snapshot 1`] = `
+{
+  "common": {
+    "validation": {
+      "required": "{name} wajib diisi.",
+    },
+  },
+  "components": {
+    "calendar": {
+      "acceptText": "Terapkan",
+      "cancelText": "Batalkan",
+    },
+    "timePicker": {
+      "cancelText": "Batal",
+      "labels": [
+        "Jam",
+        "Menit",
+      ],
+      "toolbarTitle": "Pilih waktu",
+    },
+  },
+  "fiveHundred": {
+    "action": "WhatsApp",
+    "description": "Sistem Rey sedang mengalami masalah. Mohon coba kembli dalam beberapa saat atau hubungi kami via",
+    "title": "Maaf, Sistem Sedang Error",
+  },
+  "fourOFour": {
+    "action": "Beranda",
+    "description": "Halaman ini tidak ada di Rey. Yuk, periksa ulang link tujuan kamu atau kembali ke",
+    "title": "Yah, Halaman Tidak Ditemukan",
+  },
+}
+`;

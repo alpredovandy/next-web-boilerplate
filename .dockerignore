@@ -1,0 +1,6 @@
+.github
+.idea
+.next
+out
+node_modules
+.DS_Store

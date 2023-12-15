@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test locales: en Snapshot 1`] = `
+{
+  "common": {
+    "validation": {
+      "required": "{name} must be filled.",
+    },
+  },
+  "components": {
+    "calendar": {
+      "acceptText": "Apply",
+      "cancelText": "Cancel",
+    },
+    "timePicker": {
+      "cancelText": "Cancel",
+      "labels": [
+        "Hour",
+        "Minutes",
+      ],
+      "toolbarTitle": "Select time",
+    },
+  },
+  "fiveHundred": {
+    "action": "WhatsApp",
+    "description": "Rey's system is experiencing problems. Please try again in a few moments or contact us via",
+    "title": "Sorry, System Error",
+  },
+  "fourOFour": {
+    "action": "Home",
+    "description": "This page does not exist on Rey. Come on, double-check your destination link or return to",
+    "title": "Well, Page Not Found",
+  },
+}
+`;

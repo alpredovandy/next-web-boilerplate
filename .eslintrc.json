@@ -1,3 +1,61 @@
 {
-  "extends": "next/core-web-vitals"
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "jest": true
+  },
+  "extends": [
+    "next",
+    "eslint:recommended",
+    "next/core-web-vitals",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "project": ["tsconfig.json"]
+  },
+  "plugins": ["react", "react-hooks", "unused-imports", "prettier"],
+  "rules": {
+    "@typescript-eslint/no-unused-vars": "error",
+    "@typescript-eslint/no-var-requires": "off",
+    "@typescript-eslint/no-explicit-any": "warn",
+    "@typescript-eslint/no-empty-function": "off",
+    "@typescript-eslint/no-empty-interface": "warn",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/consistent-type-imports": [
+      "error",
+      {
+        "prefer": "type-imports",
+        "fixStyle": "inline-type-imports",
+        "disallowTypeAnnotations": false
+      }
+    ],
+    "@typescript-eslint/consistent-type-exports": [
+      "error",
+      { "fixMixedExportsWithInlineTypeSpecifier": true }
+    ],
+    "unused-imports/no-unused-imports": "error",
+    "unused-imports/no-unused-vars": [
+      "error",
+      {
+        "vars": "all",
+        "varsIgnorePattern": "^_",
+        "args": "after-used",
+        "argsIgnorePattern": "^_"
+      }
+    ],
+    "no-console": ["error", { "allow": ["warn", "error"] }]
+  },
+  "overrides": [
+    {
+      "files": ["**/?(*.)+(spec|test).[jt]s?(x)"],
+      "rules": {
+        "react/display-name": "off",
+        "testing-library/no-await-sync-queries": "off"
+      },
+      "extends": ["plugin:testing-library/react", "plugin:jest-dom/recommended"]
+    }
+  ]
 }
